@@ -76,7 +76,7 @@ const CryptoTable = ({ data }) => {
         </div>
         <div className='md:hidden space-y-3'>
                     {data.map((coin) => (
-                        <div key={coin.id} className="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
+                        <div key={coin.id} className="bg-white rounded-lg p-2 m-2 shadow-sm hover:shadow-md transition-shadow">
                             <div className="flex justify-between items-start">
                                 <img 
                                  src={coin.logo}
@@ -101,7 +101,7 @@ const CryptoTable = ({ data }) => {
                                     </div>
                                 </div>
                             </div>
-                            <span className="text-gray-500 text-sm">#{coin.id}</span>
+                            <span className="text-gray-500 text-sm">{coin.id}</span>
 
                             <div className="grid grid-cols-2 gap-4 mt-4 text-sm">
                                 <div className='space-y-1'>
