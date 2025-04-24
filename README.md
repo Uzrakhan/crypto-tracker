@@ -1,43 +1,57 @@
-# 🚀 Crypto Tracker - React & Redux toolkit
+# 💹 Crypto Price Tracker 
+Real-time cryptocurrency market dashboard built with React + Redux Toolkit.
 
-[![React](https://img.shields.io/badge/React-18.2-blue)](https://react.dev/)
-[![Redux](https://img.shields.io/badge/Redux_Toolkit-1.9-purple)](https://redux-toolkit.js.org/)
-![License](https://img.shields.io/badge/License-MIT-green)
+![Demo Preview](./demo.gif) <!-- Replace with actual demo video/GIF -->
 
-A  cryptocurrency price tracking dashboard with real-time updates via Websocket simulation. Built for React internship assessment.
-
-![Demo GIF](./demo.gif) *Replace with actual demo link*
-
-## ✨ Features
-- **Real-time price updates** (1-2 second refresh)
-- **Multi-view display** (Desktop table + Mobile cards)
-- **Live market metrics**:
-  - Price, 1h/24h/7d percentage changes
-  - Market cap & 24h volume
-  - Circulating supply
-- **Interactive sparkline charts**
-- **Smart color-coding** (Green/red for gains/losses)
-- **WebSocket fallback** (Simulated updates when offline)
+## 🌟 Features
+- Real-time price updates via Binance WebSocket
+- Responsive design (Desktop Table + Mobile Cards)
+- Live market metrics:
+  - Price & Percentage Changes (1h/24h/7d)
+  - Market Cap & 24h Volume
+  - Circulating Supply
+- Interactive Sparkline Charts
+- Mock Data Simulation Mode
 
 ## 🛠 Tech Stack
-| Category       | Technologies                          |
-|----------------|---------------------------------------|
-| Core           | React 18, Redux Toolkit               |
-| Styling        | Tailwind CSS, Headless UI             |
-| Visualization  | react-sparklines                      |
-| Utilities      | WebSocket API, numeral.js             |
+- **Frontend**: React 18 + Vite
+- **State Management**: Redux Toolkit
+- **Styling**: Tailwind CSS
+- **Charts**: react-sparklines
 
-## 📁 Project Structure
-```bash
+## 📂 Project Structure
 src/
-├── store/               # State management
-│   ├── cryptoSlice.ts   # Redux logic
-│   └── store.ts         # Redux store
-├── services/            # Data services
-│   └── binanceWS.ts     # WebSocket handler
-├── components/          # UI components
-│   └── CryptoTable.tsx  # Main display
-├── hooks/               # Custom hooks
-├── types/               # TypeScript types
-├── App.tsx              # Root component
-└── index.tsx            # Entry point
+├── store/
+│ ├── cryptoSlice.js # Redux state logic
+│ └── store.js # Redux store config
+├── services/
+│ └── binanceWS.js # WebSocket service
+├── components/
+│ └── CryptoTable.jsx # Main UI component
+├── App.jsx
+├── main.jsx
+
+
+## 🚀 Installation
+
+### Prerequisites
+- Node.js ≥18.x
+- npm ≥9.x
+
+1. Clone Repository
+git clone https://github.com/<your-username>/crypto-tracker.git
+cd crypto-tracker
+2. Install Dependencies
+npm install
+3. Start Development Server
+npm run dev
+4. Open in Browser
+http://localhost:5173
+
+📱 Responsive Design
+Desktop View
+Desktop Preview
+
+Mobile View
+Mobile Preview
+
