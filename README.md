@@ -1,5 +1,5 @@
 # 💹 Crypto Price Tracker 
-Real-time cryptocurrency market dashboard built with React + Redux Toolkit.
+Real-time cryptocurrency market dashboard built with React + Redux Toolkit. Built for React internship assessment.
 
 ![Demo Preview](./demo.gif) <!-- Replace with actual demo video/GIF -->
 
