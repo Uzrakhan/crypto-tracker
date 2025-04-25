@@ -1,12 +1,53 @@
-# React + Vite
+# 💹 Crypto Price Tracker 
+Real-time cryptocurrency market dashboard built with React + Redux Toolkit. Built for React internship assessment.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Demo Preview] 
+<img src="./src/assets/demo.gif" />
 
-Currently, two official plugins are available:
+## 🌟 Features
+- Real-time price updates via Binance WebSocket
+- Responsive design (Desktop Table + Mobile Cards)
+- Live market metrics:
+  - Price & Percentage Changes (1h/24h/7d)
+  - Market Cap & 24h Volume
+  - Circulating Supply
+- Interactive Sparkline Charts
+- Mock Data Simulation Mode
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠 Tech Stack
+- **Frontend**: React 18 + Vite
+- **State Management**: Redux Toolkit
+- **Styling**: Tailwind CSS
+- **Charts**: react-sparklines
 
-## Expanding the ESLint configuration
+## 📂 Project Structure
+src/
+├── store/
+│ ├── cryptoSlice.js # Redux state logic
+│ └── store.js # Redux store config
+├── services/
+│ └── binanceWS.js # WebSocket service
+├── components/
+│ └── CryptoTable.jsx # Main UI component
+├── App.jsx
+├── main.jsx
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## 🚀 Installation
+
+### Prerequisites
+- Node.js ≥18.x
+- npm ≥9.x
+
+1. Clone Repository
+git clone https://github.com/<your-username>/crypto-tracker.git
+cd crypto-tracker
+2. Install Dependencies
+npm install
+3. Start Development Server
+npm run dev
+4. Open in Browser
+http://localhost:5173
+
+
+
